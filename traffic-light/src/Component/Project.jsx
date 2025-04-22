@@ -8,6 +8,7 @@ const Project = () => {
     red: 30,
     yellow: 10,
   };
+  
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -18,7 +19,7 @@ const Project = () => {
             light === "green" ? "yellow" : light === "yellow" ? "red" : "green";
           setLight(nextLight);
           return 0;
-        }
+         }
         return next;
       });
     }, 1000);
@@ -67,12 +68,15 @@ const Project = () => {
               )} border border-t-4 border-gray-700`}
             />
           </div>
+          
         </div>
-        <div className="bg-black h-56  w-7 ">2</div>
+        <div className="bg-black h-56  w-7 "></div>
+        <div className="w-14 h-4 bg-black rounded-3xl"></div>
       </div>
-      <div className="absolute bottom-36 right-[47.8%] w-14 text-center   border-4  border-gray-600 p-1 bg-white rounded-sm font-bold  text-gray-600 ">
+      <div className="absolute bottom-40 right-[47.8%] w-14 text-center   border-4  border-gray-600 p-1 bg-white rounded-sm font-bold  text-gray-600 ">
         {counter}
       </div>
+      
     </div>
   );
 };

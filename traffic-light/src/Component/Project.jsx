@@ -47,7 +47,7 @@ const Project = () => {
     <div className=" h-screen   ">
       <div className="flex flex-col py-1 justify-center items-center">
         <div className="mx-auto w-[10%] ">
-          <div className="bg-gray-600 p-6 rounded-lg   flex flex-col items-center gap-4">
+          <div className="bg-gray-600 border-2  p-6 rounded-lg   flex flex-col items-center gap-4">
             <div
               onClick={() => handleClick("red")}
               className={`${getLightClass(
@@ -68,7 +68,7 @@ const Project = () => {
             />
           </div>
         </div>
-        <div className="bg-black h-56 w-7">2</div>
+        <div className="bg-black h-56  w-7 ">2</div>
       </div>
       <div className="absolute bottom-36 right-[47.8%] w-14 text-center   border-4  border-gray-600 p-1 bg-white rounded-sm font-bold  text-gray-600 ">
         {counter}

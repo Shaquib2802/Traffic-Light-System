@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-
 const Project = () => {
   const [light, setLight] = useState("green");
   const [counter, setCounter] = useState(0);
@@ -16,7 +15,7 @@ const Project = () => {
         const next = prev + 1;
         if (next >= durations[light]) {
           const nextLight =
-            light === "green" ? "red" : light === "red" ? "yellow" : "green";
+            light === "green" ? "yellow" : light === "yellow" ? "red" : "green";
           setLight(nextLight);
           return 0;
         }
